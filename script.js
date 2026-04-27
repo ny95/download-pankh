@@ -117,7 +117,7 @@ function renderOptions() {
 function wireInteractions() {
   primaryDownloadButton.addEventListener("click", () => {
     const href = primaryDownloadButton.dataset.href || "#download";
-    window.location.replace = href;
+    window.location.href = href;
   });
 
   toggleOptionsButton.addEventListener("click", () => {
