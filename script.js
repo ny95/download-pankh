@@ -4,7 +4,7 @@ const downloadOptions = [
     title: "Download for Mac",
     subtitle: "macOS universal desktop build",
     icon: "",
-    href: "#mac",
+    href: "https://pankh.email",
     aliases: ["mac", "macos", "darwin"],
   },
   {
@@ -12,7 +12,7 @@ const downloadOptions = [
     title: "Download for iOS",
     subtitle: "iPhone and iPad build",
     icon: "",
-    href: "#ios",
+    href: "https://pankh.email",
     aliases: ["iphone", "ipad", "ios"],
   },
   {
@@ -20,7 +20,7 @@ const downloadOptions = [
     title: "Download for Android",
     subtitle: "Android phones and tablets",
     icon: "▶",
-    href: "#android",
+    href: "https://pankh.email",
     aliases: ["android"],
   },
   {
@@ -28,7 +28,7 @@ const downloadOptions = [
     title: "Download for Windows 11, 10",
     subtitle: "Recommended Windows installer",
     icon: "⊞",
-    href: "#windows-msix",
+    href: "https://pankh.email",
     aliases: ["windows", "win32", "win64"],
   },
   {
@@ -36,7 +36,7 @@ const downloadOptions = [
     title: "Download for Windows (exe)",
     subtitle: "Classic executable package",
     icon: "⊞",
-    href: "#windows-exe",
+    href: "https://pankh.email",
     aliases: [],
   },
   {
@@ -44,7 +44,7 @@ const downloadOptions = [
     title: "Download for Linux SNAP",
     subtitle: "Linux desktop distribution",
     icon: "✦",
-    href: "#linux",
+    href: "https://pankh.email",
     aliases: ["linux", "x11", "ubuntu"],
   },
   {
@@ -52,7 +52,7 @@ const downloadOptions = [
     title: "Download for Huawei",
     subtitle: "Huawei AppGallery release",
     icon: "H",
-    href: "#huawei",
+    href: "https://pankh.email",
     aliases: ["harmony", "huawei"],
   },
 ];
