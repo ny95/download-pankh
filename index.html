@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pankh Mail — Cross Platform Email</title>
+    <meta
+      name="description"
+      content="Pankh Mail is a privacy-first cross-platform email experience built for desktop and mobile."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar container">
+        <a class="brand" href="#home">
+          <img src="./pankh-2d.png" alt="Pankh logo" />
+          <img class="brand-textmark" src="./pankh-text.png" alt="Pankh Mail" />
+        </a>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#platforms">Platforms</a>
+          <a href="#security">Security</a>
+          <a href="#download">Download</a>
+        </nav>
+        <a class="nav-cta" href="#download">Download Now</a>
+      </header>
+
+      <main id="home">
+        <section class="hero container">
+          <div class="hero-copy">
+            <span class="eyebrow">Built for modern communication</span>
+            <h1>The Calm, Powerful Email Experience for Every Device</h1>
+            <p>
+              Pankh Mail brings together focused inboxes, secure login flows,
+              and a polished cross-platform design for teams and individuals.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#download">Get Pankh Mail</a>
+              <a class="button secondary" href="#features">See Features</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <strong>125k+</strong>
+                <span>Projected inbox syncs / day</span>
+              </div>
+              <div>
+                <strong>Private</strong>
+                <span>Built around user-owned accounts</span>
+              </div>
+              <div>
+                <strong>One flow</strong>
+                <span>Desktop, mobile, and web ready</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="floating-card large">
+              <img src="./pankh-desktop-ui.png" alt="Pankh desktop preview" />
+            </div>
+            <div class="floating-card small top">
+              <img src="./pankh-3d.png" alt="Pankh product icon" />
+            </div>
+            <div class="floating-card small bottom">
+              <img src="./pankh-mobile-ui.png" alt="Pankh mobile preview" />
+            </div>
+          </div>
+        </section>
+
+        <section class="spotlight container">
+          <div class="spotlight-media">
+            <img src="./pankh-desktop-ui.png" alt="Pankh desktop workspace" />
+          </div>
+          <div class="spotlight-copy">
+            <span class="eyebrow">Pankh AI Assist</span>
+            <h2>Smarter Setup, Clearer Inbox Management</h2>
+            <p>
+              From automatic server discovery to guided authentication choices,
+              Pankh helps users connect their mail accounts without friction.
+            </p>
+            <a href="#download" class="text-link">Explore the download options →</a>
+          </div>
+        </section>
+
+        <section id="features" class="features-section">
+          <div class="container">
+            <div class="section-heading centered">
+              <span class="eyebrow">Why Pankh</span>
+              <h2>Powerful, private, and intuitive</h2>
+              <p>
+                Everything users need to configure, read, and manage email
+                across platforms.
+              </p>
+            </div>
+
+            <div class="feature-grid">
+              <article class="feature-card pink">
+                <div class="feature-icon">✦</div>
+                <h3>Smart Setup</h3>
+                <p>
+                  Automatic IMAP and SMTP discovery with guided fallbacks when
+                  manual setup is needed.
+                </p>
+              </article>
+              <article class="feature-card blue">
+                <div class="feature-icon">↻</div>
+                <h3>Hosted Authentication</h3>
+                <p>
+                  Launch provider sign-in flows for Google, Microsoft, and more
+                  when supported.
+                </p>
+              </article>
+              <article class="feature-card green">
+                <div class="feature-icon">▣</div>
+                <h3>Focused Layout</h3>
+                <p>
+                  Balanced panels and account controls that feel consistent on
+                  desktop, tablet, and mobile.
+                </p>
+              </article>
+              <article class="feature-card yellow">
+                <div class="feature-icon">☰</div>
+                <h3>Unified Accounts</h3>
+                <p>
+                  Keep multiple accounts accessible from one polished workspace
+                  without losing clarity.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="device-showcase container">
+          <div class="device-copy">
+            <span class="eyebrow">Designed to feel native</span>
+            <h2>Elegant on phones, tablets, and large screens</h2>
+            <p>
+              Pankh adapts cleanly across form factors, with responsive setup
+              flows, readable controls, and platform-aware behavior.
+            </p>
+          </div>
+          <div class="device-visual">
+            <img src="./pankh-mobile-ui.png" alt="Pankh mobile interface" />
+            <img src="./pankh-desktop-ui.png" alt="Pankh desktop interface" />
+          </div>
+        </section>
+
+        <section id="platforms" class="platform-section">
+          <div class="container">
+            <div class="section-heading">
+              <span class="eyebrow">Cross-platform delivery</span>
+              <h2>One download area, tuned to the user’s device</h2>
+              <p>
+                The primary recommendation changes automatically based on the
+                detected platform, while all other options stay easy to select.
+              </p>
+            </div>
+
+            <div id="download" class="download-panel">
+              <div class="download-primary">
+                <div class="download-primary__meta">
+                  <span class="pill">Recommended</span>
+                  <span id="platformHint" class="platform-hint">Detecting platform…</span>
+                </div>
+                <button id="primaryDownloadButton" class="download-button" type="button">
+                  Download for your device
+                </button>
+              </div>
+
+              <div class="download-list-card">
+                <div class="download-list-header">
+                  <h3>Other download options</h3>
+                  <button id="toggleOptionsButton" class="toggle-button" type="button" aria-expanded="true">
+                    <span>Hide</span>
+                  </button>
+                </div>
+                <ul id="downloadOptions" class="download-options"></ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="security" class="security-section container">
+          <div class="security-graphic">
+            <div class="security-orbit">
+              <div class="orbit-core">🔒</div>
+              <span class="orbit-node orbit-node--1">OAuth</span>
+              <span class="orbit-node orbit-node--2">IMAP</span>
+              <span class="orbit-node orbit-node--3">SMTP</span>
+              <span class="orbit-node orbit-node--4">Cache</span>
+              <span class="orbit-node orbit-node--5">Sessions</span>
+              <span class="orbit-node orbit-node--6">Device</span>
+            </div>
+          </div>
+          <div class="security-copy">
+            <span class="eyebrow">Privacy & security</span>
+            <h2>Configuration help without sacrificing control</h2>
+            <p>
+              Pankh is built to support secure hosted authentication, explicit
+              manual configuration, and a setup experience that stays transparent
+              about what it is doing.
+            </p>
+          </div>
+        </section>
+
+        <section class="testimonial-section">
+          <div class="container testimonial-grid">
+            <div class="testimonial-copy">
+              <span class="eyebrow">Early feedback</span>
+              <h2>A cross-platform email client users can actually enjoy</h2>
+              <p>
+                From personal inboxes to team workflows, Pankh is designed to
+                feel thoughtful rather than noisy.
+              </p>
+            </div>
+            <div class="testimonial-card">
+              <img src="./pankh-2d.png" alt="Pankh icon" class="testimonial-logo" />
+              <blockquote>
+                “The setup flow feels guided and modern. It’s the first time
+                manual mail configuration didn’t feel intimidating.”
+              </blockquote>
+              <cite>Preview user · Product designer</cite>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div>
+            <a class="brand footer-brand" href="#home">
+              <img src="./pankh-2d.png" alt="Pankh logo" />
+              <img class="brand-textmark" src="./pankh-text.png" alt="Pankh Mail" />
+            </a>
+            <p>Cross-platform email, polished setup, secure authentication.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#features">Features</a>
+            <a href="#platforms">Platforms</a>
+            <a href="#security">Security</a>
+            <a href="#download">Download</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
